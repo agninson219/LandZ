@@ -1,0 +1,85 @@
+@import "reset.css"; 
+@import "footer.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300&display=swap');
+
+form
+{
+    padding-top: 50px;
+    padding-left:45px;
+    padding-right:45px;  
+    background: transparent;
+    
+  }
+form .form-head
+{
+	text-align: center;
+	font-size: 130%;
+	font-family: Arial, Helvetica, sans-serif;
+
+}  
+form .vert-line{
+	border-top: 1px solid orangered;
+	margin-bottom: 8%;
+	margin-top: 5%;
+}
+
+.form-group
+{ 
+  background: aliceblue;
+  border-radius: 2px;
+  margin: 10px solid black;
+}
+.form-group input:hover{
+	border: 1px solid orangered;
+}
+.btn-reset,
+.btn-signup{
+	background-color: orangered;
+	margin-top: 5%;
+}
+.btn-reset:hover,
+.btn-signup:hover{
+	background-color: rgb(26, 107, 228);
+}
+
+.btn-reset{
+	float: right;
+}
+body {
+    background: #076585;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+/* navbar styling */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.541);
+}
+.navbar-brand{
+    font-size: 110%;
+}
+.active-links{
+    margin-left: 70%;
+}
+.navbar-nav .nav-item .nav-link{
+    color: white;
+}
+.nav-item a:hover{
+    color: rgb(255, 238, 0) !important;
+    transition: 2ms;
+    font-family: 'Blinker', sans-serif;
+}
+/* navbar styling ends */
+
+
+@media only screen and (max-width: 600px) {
+    .active-links{
+        margin-left: 0%;
+    }
+    .form-group{
+        list-style-type: none;
+    }
+}   
+
