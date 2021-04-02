@@ -38,9 +38,31 @@ header{
 
 }
 /* header styling ends */
+
+/* style for split class */
+.split {
+  display:flex;
+  /* height: 100vh; */
+  margin-top: -3.15%;
+  margin-bottom: -2%;
+}
+.split-left {
+  width: 50%;  
+  background-color:orangered;
+}
+.split .split-left img{
+  height: 100vh;
+  width: 100%;
+}
+.split-right {
+   width: 50%;
+   background-color:#fcfcfc;
+   
+}
+
 form {
-  width:60%;
-  margin-left:20%;
+  width:100%; /*changed from 60% to 100%*/
+  margin-left:0%; /*changed from 20% to 0%*/
   padding-top: 0%;
   font-family: 'Roboto', sans-serif;
 }
@@ -142,14 +164,28 @@ form .container .psw {
     }
     form .flex-container{
       display: list-item;
+      /* display: block-ruby; */
       list-style-type: none;
       padding-top: 5%;
+      /* margin-left:-1%; */
     }
     form .flex-container a:hover{
       color: orangered;
       text-decoration: none;
       margin-left: 5%;
-      transition: 100ms ease-in;
+      transition: 500ms ease-in;
     }
 
+    .split .split-left{
+      display:none;
+    }
+    .split .split-right{
+      width:100%;
+      
+    }
+    .split {
+      margin-top: -11%;
+      margin-bottom: -5%;
+    }
+ 
   }
