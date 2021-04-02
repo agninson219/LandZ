@@ -48,7 +48,6 @@ header{
 }
 .split-left {
   width: 50%;  
-  background-color:orangered;
 }
 .split .split-left img{
   height: 100vh;
