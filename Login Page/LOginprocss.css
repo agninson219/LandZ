@@ -1,0 +1,217 @@
+@import "reset.css";
+@import "footer.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@300&display=swap");
+header {
+  margin-bottom: 5%;
+  background-image: url(./images/header.jpg);
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.split {
+  height: 100%;
+  /* width: 50%; */
+  position: relative;
+  /* z-index: 1; */
+  bottom: 65px;
+}
+
+/* Control the left side */
+.left {
+  position: absolute;
+  left: 10px;
+  width: 631.5px;
+}
+
+/* Control the right side */
+.right {
+  position: absolute;
+  right: -10px;
+  width: 631.5px;
+  float: right;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered .image {
+  width: 100%;
+  height: 702px;
+}
+
+form {
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 50px;
+  width: 100%;
+  height: 702px;
+  top: 0;
+}
+form .form-head {
+  text-align: center;
+  font-size: 130%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form .vert-line {
+  border-top: 1px solid orangered;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.form-group {
+  background: aliceblue;
+  border-radius: 2px;
+  margin: 10px solid black;
+  margin-top: 10px;
+}
+.form-group input:hover {
+  border: 1px solid orangered;
+}
+.form-control {
+  display: flex;
+}
+.btn-reset,
+.btn-signup {
+  background-color: orangered;
+  margin-top: 1%;
+}
+.btn-signup {
+  margin-left: 0%;
+  float: left;
+}
+.btn-reset:hover,
+.btn-signup:hover {
+  background-color: rgb(26, 107, 228);
+}
+
+.btn-reset {
+  float: right;
+}
+main {
+  /* background: #076585;  fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #fff, #076585);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #fff, #076585); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow-x: visible;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  left: -10px;
+  width: 100%;
+  /* width:100%; */
+}
+body {
+  width: 100%;
+}
+/* navbar styling */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.541);
+  top: -69%;
+  z-index: 28;
+}
+.navbar-brand {
+  font-size: 110%;
+}
+.active-link {
+  margin-left: 70%;
+}
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+.nav-item a:hover {
+  color: rgb(255, 238, 0) !important;
+  transition: 2ms;
+  font-family: "Blinker", sans-serif;
+}
+/* navbar styling ends */
+
+.row {
+  margin-left: 2%;
+}
+
+@media only screen and (min-width: 355px) and (max-width: 500px) {
+  form {
+    /* position: relative; */
+    /* top: 50px; */
+    right: -210px;
+    padding-left: 5%;
+    width: 55%;
+    height: 791px;
+    /* right: 20px; */
+    margin-top: 0%;
+    /* margin-left: 10px; */
+
+    background-color: aliceblue;
+  }
+
+  .row {
+    margin-left: 43%;
+
+    margin-top: 7%;
+    margin-right: 30%;
+  }
+  .footer-distributed {
+    margin-top: 215%;
+    height: 90%;
+  }
+  .left {
+    display: none;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 355px) {
+  #butt {
+    /* position:relative;
+bottom:-3px;
+left:2; */
+    margin-top: 20px;
+    outline: none;
+    background: none;
+    border: none;
+  }
+
+  form {
+    /* position: relative; */
+    /* top: 50px; */
+    right: -210px;
+    padding-left: 5%;
+    width: 55%;
+    height: 791px;
+    /* right: 20px; */
+    margin-top: 0%;
+    /* margin-left: 10px; */
+
+    background-color: aliceblue;
+  }
+
+  .row {
+    margin-left: 46%;
+    margin-top: 8%;
+  }
+  .form-group {
+    list-style-type: none;
+    width: 100%;
+    height: 0px;
+    margin-top: 1%;
+  }
+  nav {
+    width: 100%;
+  }
+  .left {
+    display: none;
+  }
+
+  .footer-distributed {
+    margin-top: 228%;
+    height: 90%;
+  }
+  html {
+    height: 100%;
+  }
+  .vert-line {
+    margin-bottom: 10px;
+  }
+}
